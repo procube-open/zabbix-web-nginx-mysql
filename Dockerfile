@@ -1,4 +1,4 @@
-FROM zabbix/zabbix-web-nginx-mysql:alpine-5.4-latest
+FROM zabbix/zabbix-web-nginx-mysql:alpine-5.4.1
 
 ENV PHP_TZ Asia/Tokyo
 USER root
