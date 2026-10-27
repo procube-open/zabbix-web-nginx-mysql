@@ -1,9 +1,6 @@
-FROM zabbix/zabbix-web-nginx-mysql:alpine-5.2.7
+FROM zabbix/zabbix-web-nginx-mysql:6.0-alpine
 
-ENV PHP_TZ Asia/Tokyo
 USER root
-RUN apk update && apk upgrade
-RUN apk add font-noto font-noto-cjk
-RUN fc-cache -fv
-RUN ln -f -s /usr/share/fonts/noto/NotoSansCJK-Regular.ttc /usr/share/zabbix/assets/fonts/DejaVuSans.ttf
+RUN apk add --no-cache font-noto-cjk && \
+    ln -sf /usr/share/fonts/noto/NotoSansCJK-Regular.ttc /usr/share/zabbix/assets/fonts/DejaVuSans.ttf
 USER zabbix
