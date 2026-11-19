@@ -1,4 +1,4 @@
-FROM zabbix/zabbix-web-nginx-mysql:6.0-alpine
+FROM zabbix/zabbix-web-nginx-mysql:8.0-alpine-latest
 
 USER root
 RUN apk add --no-cache font-noto-cjk && \
