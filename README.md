@@ -1,2 +1,2 @@
 # zabbix-web-nginx-mysql
-Fixed bug in zabbix/zabbix-web-nginx-mysql:alpine-5.4 that caused garbled graph legend when using Japanese characters.
+Based on Zabbix 8.0 Alpine, with a Japanese font to prevent garbled characters in graph legends.
